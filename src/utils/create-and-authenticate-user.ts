@@ -12,7 +12,7 @@ export async function createAndAuthenticateUser(
       name: 'Lilian',
       email: 'lilian@example.com',
       password_hash: await hash('123456', 6),
-      // role: isAdmin ? 'ADMIN' : 'MEMBER',
+      role: isAdmin ? 'ADMIN' : 'MEMBER',
     },
   })
 
